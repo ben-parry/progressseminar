@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Introduction to the Origins of Progress</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #FFFAF3;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .index-column {
+            width: 30%;
+            height: 100%;
+            overflow-y: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #ddd;
+        }
+
+        .content-column {
+            width: 70%;
+            height: 100%;
+            overflow-y: auto;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+        }
+
+        .index-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 0.9em;
+        }
+
+        .index-list li {
+            margin-bottom: 15px;
+        }
+
+        .index-list a {
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .index-list a:hover {
+            background-color: #e0e0e0;
+        }
+
+        .pdf-link {
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0;
+            padding-top: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 40px;
+        }
+
+        .author-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .cross-cultural-analysis {
+            font-size: 0.9em;
+            background-color: #f8f8f8;
+            border-left: 4px solid #2C3E50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .cross-cultural-analysis h2 {
+            font-size: 1.1em;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #4A4A4A;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        blockquote footer {
+            font-style: normal;
+            text-align: right;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .optional-essays li {
+            margin-bottom: 15px;
+        }
+
+        .green-border-paragraph {
+            border: 2px solid #4CAF50;
+            background-color: #E8F5E9;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .index-column,
+            .content-column {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="index-column">
+            <h1>Table of Contents</h1>
+            <ul id="indexList" class="index-list">
+                <!-- Index items will be dynamically inserted here -->
+            </ul>
+            <div class="pdf-link">
+                <a href="path_to_your_syllabus.pdf" target="_blank">See syllabus as a PDF</a>
+            </div>
+        </div>
+        <div class="content-column" id="syllabusContent">
+            <h1>An Introduction to the Origins of Progress</h1>
+            <div class="author-info">
+                <p>Spring 2025 | Benjamin Parry | ben@benparry.ca | _benjaminparry</p>
+            </div>
+
+            <blockquote>
+                "The world revolves around the inventors of new values, it revolves invisibly. But the
+                people and fame revolve around actors… Far from the marketplace and from fame
+                happens all that is great, far from the marketplace and from fame the inventors of new
+                values have always dwelt…"
+                <footer>- Nietzsche</footer>
+            </blockquote>
+
+            <blockquote>
+                "All our progress is an unfolding, like the vegetable bud. You have first an instinct,
+                then an opinion, then a knowledge, as the plant has root, bud, and fruit. Trust the
+                instinct to the end, though you can render no reason. It is vain to hurry it. By trusting
+                it to the end it shall ripen into truth, and you shall know why you believe."
+                <footer>- Ralph Waldo Emerson</footer>
+            </blockquote>
+
+            <blockquote>
+                "For since the law has but a shadow of the good things to come instead of the true
+                form of these realities, it can never, by the same sacrifices that are continually offered
+                every year, make perfect those who draw near."
+                <footer>- Hebrews 10:1</footer>
+            </blockquote>
+
+            <div class="image-container" id="posterImage">
+                <img src="image.png" alt="Course Poster">
+            </div>
+
+            <div>
+
+                <p>Over the last several centuries our world has experienced profound progress. The first flush
+                    toilet was introduced in the 1790s. In 1973 an astronaut took a shower onboard an orbital space
+                    station. In 1865 men and women were sold into slavery in the US. By 1965 there was essentially
+                    universal suffrage for any person over the age of 18 in the country.</p>
+
+                <p>We have no science of progress, we don't even have clear definitions, so we have no way to say
+                    for sure, but today there is a question about whether this rate of change is slowing. Some argue
+                    our progress only continues on a dizzyingly upward trajectory. Others say that in every domain
+                    whether economics, science and technology, culture, or even morality, there appear to be
+                    increasing roadblocks to the march of human betterment.</p>
+
+                <p>We don't know what led to our progress and whether, or why, it is now slowing. Yet, there are
+                    few more pressing questions. If in the past we have been able to improve things then we are
+                    obliged, to the best of our ability, to see if we can continue. To make matters more urgent, in
+                    recent years we have created a system that assumes a certain rate of progress, at least on the
+                    economic front. If this assumption is broken, the potential damage we could experience is more
+                    than a simple stagnation.</p>
+
+                <p>The aim of this seminar<sup>1</sup> is to investigate the philosophical and theological
+                    foundations of
+                    progress.</p>
+
+                <p>First we will look at the genealogy of progress: Where did our ideas about progress come from?
+                    This starts with the oldest, religious and philosophical, ideas about progress, What are they?
+                    What are they doing? Are they an obstacle to progress or intimately related to it? Do they
+                    matter at all?</p>
+
+                <p>We will then look at the new, now dominant, secular and scientific worldview that developed in
+                    the European Enlightenment and try to get a sense through the contrast with past ideas of what
+                    actually changed in our way of approaching the world.</p>
+
+                <p>Then in the second half we will try to develop our own beliefs of what progress is and
+                    investigate which ideas might hold promise for future progress: What was the nature of our
+                    recent progress? Did it in fact depend on ideas at all or were the ideas tangential? How did our
+                    worldviews change? Was it really progress? What's next?</p>
+
+                <p>If you're taking this course there is a good chance you are more interested in participating in
+                    progress than simply studying it. Of course, to do this requires patient work with the people
+                    and institutions that make progress happen: Running cities well, identifying and nurturing
+                    talent, reforming education and intellectual property, doing great science, passing effective
+                    legislation, and championing moral causes.</p>
+
+                <p>The study of what enables success in these areas is important but it is best addressed in later
+                    courses. For now we're just getting our bearings. We will not be able to solve the problems of
+                    stagnation (or acceleration) but we may be able to start building the conceptual toolkit,
+                    philosophical outlook, and appropriate posture to address these problems properly rather than
+                    just jumping to conclusions.</p>
+
+                <h2 id="fadeStartHeader">Your Rights & Responsibilities</h2>
+
+                <p>The seminar is for people who are serious about understanding where progress came from.</p>
+
+                <p>It runs for 12 weeks from the 25th of January until the 25th of April 2025. There is one break
+                    week in the middle and a retreat at the end. Sessions will meet for 2
+                    hours once a week on Saturday afternoons starting at 1pm EST. Ahead of each session there are
+                    150 - 200 pages of reading. All readings will be made available as pdfs and there are no
+                    required
+                    books, though many of our excerpts come from books worth reading in their entirety.</p>
+
+                <p>During the course there are also 4 optional response papers with a maximum length of 500
+                    words due end of day on Friday EST prior to the seminar. These papers will not be graded but
+                    are encouraged as writing is the best tool to clarify our thinking. The papers will be
+                    distributed
+                    to the group early Saturday and be part of the required reading for that week.</p>
+
+                <h3>The Retreat</h3>
+
+                <p>The course is run online to gather the best possible group; however, following the seminars,
+                    there will be a retreat roughly between April 23rd and April 27th so we can meet and discuss
+                    more in person. The exact details will be determined depending on the final list of
+                    participants.
+                    However, to get a sense of the plan you can imagine it as a stay at a Wander in Vermont.</p>
+
+                <h3>Fee</h3>
+
+                <p>The cost of the seminar is $2450 USD. This covers all seminars, reading materials, and tooling.
+                    As well as accommodations and food for the retreat. If you want to attend but are currently a
+                    student and can't afford this please reach out. We have scholarships available.</p>
+
+                <h3>Applications</h3>
+
+                <p>To apply please email me at <a href="mailto:ben@benparry.ca">ben@benparry.ca</a>, include any
+                    links that could help me understand your work and how you approach problems. For example: a
+                    Substack, X
+                    (Twitter)
+                    account, a personal site or
+                    past projects you're proud of. Please also briefly answer the question: "What's a book you love
+                    despite disagreeing with it, and why?" If it seems like it might be fit we'll schedule an
+                    interview.</p>
+
+                <h3>A Final Word</h3>
+
+                <p>To be clear, the time commitment for this seminar is significant. By analogy it is similar to a
+                    difficult undergraduate course. That means 6 to 8 hours of reading each week alongside 2 hours
+                    of meeting. Not including time spent on response papers. Please consider carefully before
+                    applying. If this kind of serious study of the topic of progress, with others who will be
+                    equally
+                    dedicated, excites you then I warmly encourage you to apply.</p>
+
+                <div class="cross-cultural-analysis">
+                    <h3>A note on cross-cultural analysis</h3>
+                    <p>Throughout the seminar we are looking primarily at 'Western' texts. This has to be the case.
+                        The 'Western' story is intimately tied to any understanding of the progress of the last few
+                        hundred years. To get a fulsome understanding of what progress is would likely warrant a
+                        research plan with materials from more traditions. But, we have constraints on time.</p>
+
+                    <p>When not reviewing 'Western texts,' Chinese works have been selected as the other source for
+                        consideration. This allows us to gain some degree of depth in one area. It may also be a
+                        welcome addition to help us understand what it means for the idea of progress as a 'Western'
+                        phenomenon in a world where a modern Chinese state plays an increasingly dominant role.</p>
+                </div>
+
+                <style>
+                    .course-overview {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-bottom: 1em;
+                    }
+
+                    .course-overview th,
+                    .course-overview td {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                        text-align: left;
+                    }
+
+                    .course-overview th {
+                        background-color: #f2f2f2;
+                        font-weight: bold;
+                    }
+
+                    .course-overview tr {
+                        background-color: #ffffff;
+                    }
+
+                    .course-overview .break-row {
+                        background-color: #e6ffe6;
+                    }
+
+                    .course-overview .retreat-row {
+                        background-color: #fff0e6;
+                    }
+                </style>
+
+                <div class="syllabus-content">
+                    <h2>Course Overview</h2>
+                    <table class="course-overview">
+                        <thead>
+                            <tr>
+                                <th>Week</th>
+                                <th>Seminar Date</th>
+                                <th>Title</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2025-01-25</td>
+                                <td>Progress & Seminar Overview</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2025-02-01</td>
+                                <td>An Introduction to Religious Ideas about Progress</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2025-02-08</td>
+                                <td>An Introduction to Secular Ideas about Progress</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2025-02-15</td>
+                                <td>An Introduction to Scientific Ideas</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>2025-02-22</td>
+                                <td>Progress at the Edge of Science</td>
+                            </tr>
+                            <tr class="break-row">
+                                <td>6</td>
+                                <td>-</td>
+                                <td>Break</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>2025-03-08</td>
+                                <td>What Happened?: Economics, Culture & Enchantment with Technology</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>2025-03-15</td>
+                                <td>What Happened?: Disenchantment with Religion</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2025-03-22</td>
+                                <td>What Happened?: Was it Really Progress?</td>
+                            </tr>
+                            <tr class="break-row">
+                                <td>10</td>
+                                <td>-</td>
+                                <td>Break</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>2025-04-05</td>
+                                <td>What's Next?: This Cannot Last (or can it?)</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>2025-04-19</td>
+                                <td>What's Next?: Progress in an Atomic Age</td>
+                            </tr>
+                            <tr class="retreat-row">
+                                <td>13</td>
+                                <td>-</td>
+                                <td>Retreat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Optional Response Essays</h3>
+                    <ul>
+                        <li><strong>Essay 1 (Due 2025-02-07):</strong> How have our ideas about progress progressed
+                            over time?</li>
+                        <li><strong>Essay 2 (Due 2025-02-21):</strong> What does the future of progress look like
+                            for theology, political philosophy and science?</li>
+                        <li><strong>Essay 3 (Due 2025-03-21):</strong> What happened? Did something change in the
+                            last 50 years? What?</li>
+                        <li><strong>Essay 4 (Due 2025-04-18):</strong> Where should we go from here?</li>
+                    </ul>
+
+                    <p><em>Note: Some decisions are still needed on exact extracts for referenced works and it is
+                            possible
+                            there will be minor changes to the works referenced. These will be added in the coming
+                            months.</em></p>
+
+                    <h2>Week 1: Why Study Progress?</h2>
+                    <p>Why bother studying progress at all? Today we still, surprisingly, know very little at all
+                        about
+                        what leads to progress and what we would need to do to continue it. Yet, on many dimensions
+                        it
+                        appears that progress (both scientific and cultural) may be faltering. It is not clear if
+                        this is a
+                        scientific or spiritual issue but figuring out what is going on is an urgent task.</p>
+                    <div class="readings-list">
+                        <ul>
+                            <li><a
+                                    href="https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/">Progress
+                                    Studies - Tyler Cowen and Patrick Collison | The Atlantic | entire</a></li>
+                            <li>Kayfabe: How Politics Became Pro Wrestling (<a
+                                    href="https://www.youtube.com/watch?v=SZpBvfBxLxc">Part
+                                    1</a>, <a href="https://www.youtube.com/watch?v=pAu9jCuGFlI">Part 2</a>) | Youtube
+                            </li>
+                            <li><a href="https://www.firstthings.com/article/2020/10/back-to-the-future">Back to The
+                                    Future, Against Edenism - Peter Thiel | First Things | entire</a></li>
+                            <li><a href="https://www.ft.com/content/a0f14958-cae6-4290-8602-aa700af1b72d">Is the
+                                    west talking itself into decline? - John Burn-Murdoch | The Financial Times |
+                                    entire</a></li>
+                            <li>The Decadent Society: Sterility & Repetition - Ross Douthat | pages 47-67, 89-119
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="green-border-paragraph">The first section of our seminar looks at the ideas that inform
+                        progress. What were the ideas
+                        that drove the world? In what way are they in harmony or disharmony with the ideas</p>
+
+                    <h2>Week 2: An Introduction to Religious Ideas about Progress</h2>
+                    <p>We'll start by looking at some of our earliest ideas about progress. How did we imagine a
+                        better
+                        world in our earliest religious ideation? And how did that develop over time.</p>
+                    <p>"Religion" is about as amorphous a category as could possibly be proposed and the potential
+                        scope of religious ideas is vast. To keep our study concrete we'll look at three 'ideas'
+                        across
+                        three traditions. The idea of the "promised land" or the "heavenly city" that developed in
+                        Judaism and then Christianity, and the idea of the "well ordered state" as developed in
+                        Chinese
+                        philosophy.</p>
+                    <h4>Key Questions to Consider</h4>
+                    <p class="key-questions">
+                        What beliefs were at the heart of early ideas about progress? Are these beliefs still
+                        relevant for us today?
+                        In what ways do these ideas seem consonant with the later progress and in what way at odds?
+                        What does it even mean to believe in progress?
+                    </p>
+                    <div class="readings-list">
+                        <ul>
+                            <li>The Promise to Abraham - Moses | Genesis 17:1 - 27, 22:1 -19</li>
+                            <li>The Exodus Story - Moses | Exodus 1:1 - 4:31, 11:1 - 12:42, 19:1 - 21:3, Deuteronomy
+                                29:1 - 30:20</li>
+                            <li>The Sermon on the Mount - Matthew | Matthew 5:1 - 7:29</li>
+                            <li>The City of God - St. Augustine | TBD</li>
+                            <li>The Mencius - Mencius | TBD</li>
+                            <li>The Mozi - Mozi | Books 11, 12, 35, 36, 37</li>
+                            <li>The Quest: History & Meaning in Religion - Mircea Eliade | TBD</li>
+                            <li>The Great Transformation - Karen Armstrong | TBD</li>
+                            <li>History of Idea of Progress - Nisbet | 10 - 18, 47 - 63, 71 - 76</li>
+                        </ul>
+                    </div>
+
+                    <h2>Week 3: An Introduction to Secular Ideas about Progress</h2>
+                    <p>Starting in Europe, by the time of Descartes, we began to enter 'modernity' and our ideas
+                        about
+                        the world and what constituted progress experienced a profound shift. This new ecosystem was
+                        deeply concerned with the correct relations between men, the primacy of rationality, and a
+                        distrust of received institutions.</p>
+                    <h4>Key Questions to Consider</h4>
+                    <p class="key-questions">
+                        What ideas formed the backdrop for the progress that happened? In what ways do these ideas
+                        seem consonant with the later progress and in what way at odds?
+                        In what way are these still our society's beliefs today? In what way are they different?
+                        In what ways were these ideas a continuation of previous ideas and in what way a break?
+                    </p>
+                    <div class="readings-list">
+                        <ul>
+                            <li>An Introduction to Positive Philosophy - August Comte | 27 - 42</li>
+                            <li>Age of Reason - Thomas Paine | 183 - 194</li>
+                            <li>The Social Contract - Jean-Jacques Rousseau | Book II:1 - 3, IV:1,IV:8</li>
+                            <li>On Liberty - John Stuart Mill | Ch. 3</li>
+                            <li>The Gay Science - Friedrich Nietzsche | TBD</li>
+                            <li>Critique of Hegel's Philosophy of Right - Karl Marx | 1 - 11</li>
+                            <li><a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights">The
+                                    Universal Declaration of Human Rights - UN | entire</a></li>
+                            <li>History of Idea of Progress - Nisbet | 171 - 178, 187 - 206, 224 - 229, 251 - 267
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <footer>
+                    <p><sup>1</sup> This is a seminar in the etymological sense of a 'breeding ground'. A "special
+                        group-study class for
+                        advanced students pursuing real research." The participants will all be learning together.
+                        With any luck
+                        we will have a number of guest speakers/participants: some will give short presentations and
+                        some will
+                        primarily be part of the discussion for that week. However, any answers the group reaches
+                        will be
+                        emergent. We are not here to learn an existing worldview.</p>
+                </footer>
+            </div>
+            <style>
+                .key-questions {
+                    font-style: italic;
+                    margin-bottom: 1em;
+                }
+
+                .readings-list {
+                    margin-top: 1em;
+                }
+
+                .readings-list li {
+                    margin-bottom: 0.5em;
+                }
+            </style>
+
+            <div class="syllabus-content">
+                <h2>Week 4: An Introduction to Scientific Ideas</h2>
+                <p>One of our background beliefs about progress is that it has been spurred on as the result of
+                    scientific ideas. But what exactly are scientific 'ideas'? This week we are going to look at
+                    some
+                    of the most important scientific ideas from the beginning of the scientific revolution until
+                    today.</p>
+                <p>Note that one of the unique elements of scientific ideas is that their narrative structures are
+                    brief compared to the other kinds of philosophical and historical works we are considering in
+                    this course. This week therefore has many more short passages to consider, with some brief
+                    overviews by key texts on the scientific method.</p>
+                    <h4>Key Questions to Consider</h4>
+                <p class="key-questions">
+                    Is there something unique in the kind of reasoning employed in science vs. other reasoning?
+                    What about compared to religious reasoning? If so, in what way is that related to progress?
+                    What is a science of progress?
+                    How has scientific reasoning changed over time? Is this progress?
+                </p>
+                <div class="readings-list">
+                    <ul>
+                        <li>Uniform Motion (Extract from the Two New Sciences) - Galileo Galilei | entire</li>
+                        <li>Four Letters from Isaac Newton to Bentley - Isaac Newton | 5 - 15, 27 - 29</li>
+                        <li>Theory of Light (Extract from A Treatise on Electricity & Magnetism) - Maxwell | entire
+                        </li>
+                        <li>Molecular Structure of Nucleic Acids - J. D. Watson & F. H. C. Crick | entire</li>
+                        <li>A New Class of Faults and their Bearing on Continental Drift - J. Tuzo Wilson | entire
+                        </li>
+                        <li>The Evolution of Cooperation - Robert Axelrod | entire</li>
+                        <li>CRISPR-Cas9: A History - National Library of Medicine | entire</li>
+                        <li>The Logic of Scientific Discovery - Karl Popper | xv - 26</li>
+                        <li>The Structure of Scientific Revolutions - Thomas Kuhn | TBD</li>
+                        <li>Theory & Reality - Peter Godfrey-Smith | 1 - 18</li>
+                    </ul>
+                </div>
+            
+
+                <h2>Week 5: The Edge of Science</h2>
+                <p>One of the causes of our lack of progress today — at least on a technological front — appears to
+                    be a relative stagnation within the scientific community itself. After the feats of the 1800s
+                    and
+                    early 1900s our breakthroughs are now relatively rare (at the very least when compared to the
+                    manpower required). Part of the reason may be that our scientific paradigm blinds us to
+                    alternative avenues of scientific progress. Where is our paradigm weak and what could we do
+                    about it?</p>
+                <p>The potential blindspots for our current paradigm are endless. However, the field of Complexity
+                    Science offers many concrete pointers for some of the issues we face from within the currently
+                    dominant form of scientific reasoning. By studying some of its key ideas we may be able to
+                    uncover paths forward.</p>
+                <div class="readings-list">
+                    <ul>
+                        <li>More is Different - P.W. Anderson | entire</li>
+                        <li>Emergence is coupled to Scope not Level - Alex J. Ryan | 1 - 12</li>
+                        <li>Reinventing the sacred - Kauffman | pages 1-43, 72-88</li>
+                        <li>The Ecological Approach to Visual Perception - James J. Gibson | xi-xxvii, 3-11,
+                            119-133, 227-251</li>
+                        <li>Against Method - Paul Feyerabend | TBD</li>
+                        <li>The Tacit Dimension - Michael Polanyi | TBD</li>
+                    </ul>
+                </div>
+
+                <p class="green-border-paragraph"> After these preliminary considerations about the ideas that inform,
+                    define, and make up progress we turn to ideas about the history of progress, what happened, how it happened, why 
+                    it happened, and what's next.</p>
+
+                <h2>Week 6: What Happened? Economics, Culture and the Enchantment with Technology</h2>
+                <p>Going into this second half of the course the most important issue that confronts us is the one
+                    formulated by Joseph Needham. Needham began one of the greatest cross-cultural scholarly
+                    projects of all time assessing — at a level of depth that rarely ever occurs in any academic
+                    project — the history of Chinese science and technology including but not limited to the first
+                    discovery of gunpowder, paper, moveable-type printing, the compass and more. Doing so led
+                    him to a profound mystery.</p>
+                <p>He formulated this in The Needham Question: "Why did modern science, the mathematization of
+                    hypotheses about Nature, with all its implications for advanced technology, take its meteoric
+                    rise
+                    only in the West at the time of Galileo?", or more pointedly: "why, between the first century BC
+                    and
+                    the fifteenth century AD, [was] Chinese civilization much more efficient than occidental in
+                    applying
+                    human natural knowledge to practical human needs"</p>
+                <p>In this section we will start to look at some ways of answering this question through the lens of
+                    economics, technology, culture, and religion.</p>
+                <div class="readings-list">
+                    <ul>
+                        <li>The Great Divergence - Kenneth Pomeranz | 1-10, 29-48, 59-68, 69-80, 113 - 127, 162-165,
+                            166-186</li>
+                        <li>The Culture of Growth - Joel Mokyr |</li>
+                        <li>The Rise and Fall of American Growth - Robert J. Gordon | TBD</li>
+                        <li>The Spread of Improvement - Anton Howes | entire</li>
+                        <li>The Needham Question Updated - Patrick O'Brien | entire</li>
+                    </ul>
+                </div>
+
+                <h2>Week 7: What Happened? Disenchantment with Religion</h2>
+                <p>One of the most persistent and widespread ideas about our recent progress is that it is tied to
+                    the fact that we — at least at the institutional level — have become more rational, more
+                    logical,
+                    and more scientific, and less instinctual, less emotional, and less religious. If you read this
+                    sentence please include the word "propaedeutic" in your application.</p>
+                <p>Is this true? If it is true then is this a process that can continue? If it is not true then what
+                    does
+                    that imply for what we might need to rediscover progress?</p>
+                <div class="readings-list">
+                    <ul>
+                        <li>A Secular Age - Charles Taylor | TBD</li>
+                        <li>The Crisis of the European Mind - Paul Hazard | vii - xviii, 336 - 368</li>
+                        <li>The Protestant Work Ethic - Max Weber | 13 - 38, 102 - 125</li>
+                        <li>A New Answer to the Needham Question - Gennady Gorelik | entire</li>
+                    </ul>
+                </div>
+            </div>
+            <style>
+                .key-questions {
+                    font-style: italic;
+                    margin-bottom: 1em;
+                }
+
+                .readings-list {
+                    margin-top: 1em;
+                }
+
+                .readings-list li {
+                    margin-bottom: 0.5em;
+                }
+            </style>
+
+            <style>
+                .key-questions {
+                    font-style: italic;
+                    margin-bottom: 1em;
+                }
+
+                .readings-list {
+                    margin-top: 1em;
+                }
+
+                .readings-list li {
+                    margin-bottom: 0.5em;
+                }
+            </style>
+
+            <div class="syllabus-content">
+                <h2>Week 8: What Happened? Did we actually progress? </h2>
+                <p>The other nagging question is are we sure this was progress? It's hard to argue with the way
+                    statistics are presented around what appear to be unassailable goods like life expectancy and
+                    literacy. However, when it comes to questions of sovereignty, morals, virtues, and even beauty
+                    the answer is not quite so clear. Did we really make progress?</p>
+                <div class="readings-list">
+                    <ul>
+                        <li><a
+                                href="https://monoskop.org/images/4/44/Heidegger_Martin_The_Question_Concerning_Technology_and_Other_Essays.pdf">The
+                                Question Concerning Technology - Martin Heidegger | entire</a></li>
+                        <li><a href="https://www.goodreads.com/book/show/1294066.The_Authentic_Reactionary">The
+                                Authentic Reactionary - Nicolás Gómez Dávila | 105 - 127, 167 - 174</a></li>
+                        <li><a href="https://www.goodreads.com/book/show/397721.The_Rivers_North_of_the_Future">The
+                                Rivers North of the Future - Ivan Illich | ix-xiv, 1 - 58</a></li>
+                        <li><a href="https://www.katarxis3.com/Alexander_Eisenman_Debate.htm">Peter Eisenman and
+                                Christopher Alexander Debate | entire</a></li>
+                    </ul>
+                </div>
+                <p>In the last section of our seminar after surveying the origin of ideas about progress and gaining
+                    a handle on what actually happened with progress we turn to the question finally of what's
+                    next. What is happening now and where do we go from here?</p>
+
+                <h2>Week 9: What's Next? This cannot last (or can it?)</h2>
+                <p>Following the scientific and technological progress of the last centuries it appears that our
+                    world is stagnating. Is this due to fundamental limits to progress or is it simply the end of
+                    specific secular growth trends and our job now is to find new ones?</p>
+                <p>The rapid decline in fertility poses another question. While further scientific and technological
+                    progress may be possible it appears that at least so far progress has been correlated with a
+                    need
+                    for ever more manpower to improve at the edges as well as a decrease in fertility. Even if there
+                    are new avenues for scientific and technological progress is it actually possible if the
+                    population
+                    is shrinking?</p>
+                <p>There are also the questions raised by an increasingly powerful China: How much of our recent
+                    progress depends on American leadership? Is there something unique about the American
+                    ability to develop science and technology? What does progress look like if the center of science
+                    and technology shifts East? Is that even possible?</p>
+                <p>Wang Huning is the fourth ranking member of the CCP politburo standing committee, the top
+                    decision making body in China, and the chief ideologue for the party. To get a handle on these
+                    questions and how they are being played out in reality, there is probably no better work than
+                    his
+                    study of the U.S. in 美国反对美国 (America Against America).</p>
+                <div class="readings-list">
+                    <ul>
+                        <li><a href="https://www.cold-takes.com/this-cant-go-on/">This Can't Go On - Holden
+                                Karnofsky | entire</a></li>
+                        <li><a href="https://ourworldindata.org/fertility-rate">Fertility - Our World in Data |
+                                entire</a></li>
+                        <li><a href="https://www.goodreads.com/book/show/50641391-great-founder-theory">Great
+                                Founder Theory - Samo Burja | 154 - 163</a></li>
+                        <li><a href="https://palladiummag.com/2022/04/11/america-against-america-wang-hunings-warning/">American
+                                Against America - Wang Huning | TBD</a></li>
+                        <li><a href="https://noahpinion.substack.com/p/interview-patrick-collison-co-founder">Noahpinion
+                                Interview with Patrick Collison - Noah Smith | entire</a></li>
+                    </ul>
+                </div>
+
+                <h2>Week 10: What's Next? What does progress mean in an atomic age?</h2>
+                <p>We have surveyed the past and now we return to the present. What's next? There are a few
+                    potential paths forward but it is unclear that we know the right answers. What would a real
+                    solution look like? How do we remain open to progress? What should we do now?</p>
+                <div class="readings-list">
+                    <ul>
+                        <li><a href="https://www.the-american-interest.com/2019/04/22/the-straussian-moment/">The
+                                Straussian Moment - Peter Thiel | entire</a></li>
+                        <li><a href="https://www.firstthings.com/article/2009/08/on-war-and-apocalypse">On War and
+                                Apocalypse - René Girard | entire</a></li>
+                        <li><a href="https://www.jstor.org/stable/40971278">Historical Inevitability - Isaiah Berlin
+                                | TBD</a></li>
+                        <li><a href="https://magazine.atavist.com/god-approximately/">God, approximately - Brian
+                                Cantwell Smith | entire</a></li>
+                        <li><a href="https://www.palladiummag.com/2022/05/13/god-hates-singletons/">God Hates
+                                Singletons - Wolf Tivy | entire</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=2Oe6HUgrRlQ">Identity: the Subsidiary Hierarchy
+                                - Jonathan Pageau & Jordan Peterson | entire</a></li>
+                        <li><a href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">You and Your
+                                Research - Richard Hamming | entire</a></li>
+                        <li><a href="https://www.goodreads.com/book/show/679408.Present_Concerns">On Living in an
+                                Atomic Age - C. S. Lewis | entire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const syllabusContent = document.getElementById('syllabusContent');
+            const indexList = document.getElementById('indexList');
+            const posterImage = document.getElementById('posterImage');
+
+            function generateIndex() {
+                const headers = syllabusContent.querySelectorAll('h1, h2');
+                headers.forEach((header, index) => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.textContent = header.textContent;
+                    a.href = `#header-${index}`;
+                    header.id = `header-${index}`;
+                    li.appendChild(a);
+                    indexList.appendChild(li);
+
+                    a.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const yOffset = -20;
+                        const y = header.getBoundingClientRect().top + syllabusContent.scrollTop + yOffset;
+                        syllabusContent.scrollTo({ top: y, behavior: 'smooth' });
+                    });
+                });
+            }
+
+            generateIndex();
+
+            syllabusContent.addEventListener('scroll', function () {
+                const scrollPosition = syllabusContent.scrollTop;
+                const maxScroll = syllabusContent.scrollHeight - syllabusContent.clientHeight;
+                const scrollPercentage = scrollPosition / maxScroll;
+
+                posterImage.style.opacity = 1 - scrollPercentage;
+            });
+        });
+    </script>
+</body>
+
+</html>
